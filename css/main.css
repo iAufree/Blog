@@ -13,6 +13,9 @@ p {
     font-size: 30px;
     font-family: luffy;
 }
+.center {
+    text-align: center;
+}
 /* gravatar */
  .gravatar {
     width: 137px;
@@ -39,11 +42,13 @@ p {
     background-color: transparent;
     border-color: transparent;
 }
-.navbar-toggle {
+.navbar-default .navbar-toggle {
+    background-color: #41B4D1;
     float: none;
     margin-left: 50%;
     margin-top: 25px;
     left: -22px;
+    border-color:transparent;
 }
 #bs-example-navbar-collapse-1 {
     overflow: hidden;
@@ -120,10 +125,6 @@ article p {
     padding-left: 10px;
 }
 article img {
-    margin-left: 50%;
-    position: relative;
-    border:3px solid white;
-    border-radius: 5px;
     box-shadow: 0 0 15px black;
 }
 /* footer */

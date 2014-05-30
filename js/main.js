@@ -6,9 +6,12 @@ $(function() {
         $('.active').removeClass('active');
         $(this).addClass('active');       
     });
-    var img_width = $('article').find('img').width();
-    var ImgLeft = (-img_width / 2 + 'px');
-    $('article img').css('left', ImgLeft);
+
+    //给image添加class,使图片居中显示
+    art_img = $('article').find('img');
+    art_img.addClass('img-thumbnail');
+    art_img.wrap('<div class="center"></div>')
+
     //点击元素改变背景颜色
     $('ul li:eq(0)').click(function(event) {
         $('body').animate({backgroundColor:'#2C94C0'}, "slow")        
