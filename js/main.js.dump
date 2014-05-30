@@ -1,6 +1,6 @@
 $(function() {
     $('body').animate({top: '0'}, 1000);
-    //点击按钮改变状态
+    //改变活动按钮背景色
     $('.navbar-nav>li').click(function(event) {
         $('.active').removeClass('active');
         $(this).addClass('active');       
@@ -12,8 +12,25 @@ $(function() {
     art_img.wrap('<div class="center"></div>')
 
     //点击元素改变背景颜色
+    change_bg();
+
+    var clicked = false;
+    if (!clicked) {
+        $('button').click(function(event) {
+            $('button').addClass('rotate-icon');
+            clicked = true;
+            setTimeout(function() {
+                $('button').removeClass('rotate-icon');
+                clicked = false;
+            }, 600);
+        });
+    }
+    $("pre").addClass("prettyprint");
+    prettyPrint(); 
+});
+function change_bg(){
     $('ul li:eq(0)').click(function(event) {
-        $('body').animate({backgroundColor:'#2C94C0'}, "slow")        
+        $('body').animate({backgroundColor:'#559B9D'}, "slow")        
     });
     $('ul li:eq(1)').click(function(event) {
         $('body').animate({backgroundColor:'pink'}, "slow")        
@@ -27,15 +44,5 @@ $(function() {
     $('ul li:eq(4)').click(function(event) {
         $('body').animate({backgroundColor:'#c08db1'}, "slow")        
     });
-    var clicked = false;
-    if (!clicked) {
-        $('button').click(function(event) {
-            $('button').addClass('rotate-icon');
-            clicked = true;
-            setTimeout(function() {
-                $('button').removeClass('rotate-icon');
-                clicked = false;
-            }, 600);
-        });
-    }
-})
+} 
+

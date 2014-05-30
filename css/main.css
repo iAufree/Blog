@@ -7,15 +7,15 @@ body {
     width: 100%;
     position: absolute;
     top: 1000px;
-    background: #559B9D;
+    background: #2C94C0;
     padding: 0 15px;
 }
 h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
     text-align: center;
 }
 p {
-    font-size: 30px;
-    font-family: luffy;
+    font-size: 14px;
 }
 .center {
     text-align: center;
@@ -91,9 +91,6 @@ p {
 }
 /* big navbar */
  @media (min-width:768px) {
-    body {
-        padding: 0;
-    }
     .navbar-nav {
         float:left;
         margin: 0;
@@ -117,9 +114,10 @@ p {
 article {
     border:5px solid white;
     margin-bottom: 30px;
-    background: #41B4D1;
+    background: rgba(255, 255, 255, 0.3);
     box-shadow: 5px 5px 15px rgb(53, 53, 53);
     border-radius: 5px;
+    padding: 10px 10px;
 }
 article h1 {
     font-family: luffy;
@@ -130,9 +128,30 @@ article h1 {
     border-bottom: 1px solid white;
     text-shadow: 5px 5px 5px black;
 }
+article a {
+    color: blue;
+}
+article ul {
+    padding: 0;
+}
+article li{
+    list-style: none;
+    font-size: 20px;
+}
+article li>a {
+    padding-left: 5px;
+    width: 100%;
+    display: block;
+    color: #AB42AF;
+    margin: 5px;
+    border-radius: 3px;
+}
+article li>a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
 article p {
     margin-top: 30px;
-    padding-left: 10px;
 }
 article img {
     box-shadow: 0 0 15px black;
@@ -151,7 +170,10 @@ article img {
     height: 25px;
 }
 /* MIT */
-.MIT {
+.MIT p {
+    font-family: luffy;
+}
+.MIT a{
     padding-right: 3px;
     color: white;
 }
