@@ -3,11 +3,11 @@
     src:url(../fonts/AlexBrush-Regular.ttf);
 }
 body {
-    overflow: hidden;
+    width: 100%;
     position: absolute;
     top: 1000px;
     background: #559B9D;
-    padding: 0;
+    padding: 0 15px;
 }
 h1, h2, h3, h4, h5, h6 {
     text-align: center;
@@ -148,16 +148,3 @@ article img {
     padding-right: 3px;
     color: white;
 }
-/* scrollbar */
-.wrapper {
-    padding: 0 15px !important;
-}
-/* backtop*/
-/*#backtop {
-    width:55px;
-    height:55px;
-    position:fixed;
-    right:50px;
-    bottom:50px;
-    background:blue;  
-}*/

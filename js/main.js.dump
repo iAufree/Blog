@@ -1,17 +1,17 @@
 $(function() {
     $('body').animate({top: '0'}, 1000);
-    //µã»÷°´Å¥¸Ä±ä×´Ì¬
+    //ç‚¹å‡»æŒ‰é’®æ”¹å˜çŠ¶æ€
     $('.navbar-nav>li').click(function(event) {
         $('.active').removeClass('active');
         $(this).addClass('active');       
     });
 
-    //¸øimageÌí¼Óclass,Ê¹Í¼Æ¬¾ÓÖĞÏÔÊ¾
+    //ç»™imageæ·»åŠ class,ä½¿å›¾ç‰‡å±…ä¸­æ˜¾ç¤º
     art_img = $('article').find('img');
     art_img.addClass('img-thumbnail');
     art_img.wrap('<div class="center"></div>')
 
-    //µã»÷ÔªËØ¸Ä±ä±³¾°ÑÕÉ«
+    //ç‚¹å‡»å…ƒç´ æ”¹å˜èƒŒæ™¯é¢œè‰²
     $('ul li:eq(0)').click(function(event) {
         $('body').animate({backgroundColor:'#2C94C0'}, "slow")        
     });
