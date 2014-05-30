@@ -3,6 +3,9 @@
     src:url(../fonts/AlexBrush-Regular.ttf);
 }
 body {
+    overflow: hidden;
+    position: absolute;
+    top: 1000px;
     background: #559B9D;
     padding: 0;
 }

@@ -1,4 +1,5 @@
 $(function() {
+    $('body').animate({top: '0'}, 1000);
     window.prettyPrint && prettyPrint();
     $('.wrapper').scrollbar();
     //点击按钮改变状态
