@@ -50,7 +50,7 @@ p {
     border-color: transparent;
 }
 .navbar-default .navbar-toggle {
-    background-color: #41B4D1;
+    background-color: rgba(255,255,255,0.5);
     float: none;
     margin-left: 50%;
     margin-top: 25px;
@@ -105,6 +105,64 @@ p {
         position: absolute;
     }
 }
+/* posts list */
+.posts-list {
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background: url(../images/wrapper_bg.jpg) repeat;
+}
+.posts-list ul {
+    padding: 15px 0;
+}
+.posts-list li{
+    line-height: 35px;
+    text-align: center;
+    list-style: none;
+    font-size: 20px;
+}
+.posts-list li>a {
+    width: 106%;
+    display: block;
+    color: #AB42AF;
+    margin: 5px;
+    border-radius: 3px;
+    margin-left: -3%;
+}
+.posts-list li>a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+}
+.badge {
+  min-width: 10px;
+  padding: 3px 7px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1;
+  vertical-align: baseline;
+  text-align: center;
+}
+
+.list-group-item { 
+  position: relative;
+  zoom: 1; 
+  font-family: Georgia;
+}
+.list-group-item:after { 
+  content: '\0020'; 
+  display: block; 
+  clear: both; 
+  line-height: 0; 
+  visibility: visible; 
+}
+pre {
+    border-radius: 7px;
+}
+/* panel */
+.panel-primary {
+    box-shadow:0 0 10px black; 
+}
 /* article */
  .article-list p {
     text-align: center;
@@ -131,28 +189,6 @@ article h1 {
 article a {
     color: blue;
 }
-article ul {
-    padding: 0;
-}
-article li{
-    list-style: none;
-    font-size: 20px;
-}
-article li>a {
-    padding-left: 5px;
-    width: 100%;
-    display: block;
-    color: #AB42AF;
-    margin: 5px;
-    border-radius: 3px;
-}
-article li>a:hover {
-    background: rgba(255, 255, 255, 0.5);
-    text-decoration: none;
-}
-article p {
-    margin-top: 30px;
-}
 article img {
     box-shadow: 0 0 15px black;
 }
@@ -168,6 +204,10 @@ article img {
     padding-bottom: 10px;
     bottom: 0;
     height: 25px;
+}
+/* Comment */
+.comment {
+    margin-top: 50px;
 }
 /* MIT */
 .MIT p {

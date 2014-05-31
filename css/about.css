@@ -463,7 +463,7 @@ a:focus {
     width: 900px;
     padding-bottom: 120px;
  
-    background-image: url(/public/upload/gravatar/gravatar.png);
+    background-image: url(/images/gravatar.png);
     background-position: bottom right;
     background-repeat: no-repeat;
 }
