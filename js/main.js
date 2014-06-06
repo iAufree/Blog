@@ -1,17 +1,19 @@
 $(function() {
     $('body').animate({top: '0'}, 1200);
-    //改变活动按钮背景色
+    //Change button status
     $('.navbar-nav>li').click(function(event) {
         $('.active').removeClass('active');
         $(this).addClass('active');       
     });
 
-    //给image添加class,使图片居中显示
+    //Pin navbar
+
+    //Add center propery to image
     art_img = $('article').find('img');
     art_img.addClass('img-thumbnail');
     art_img.wrap('<div class="center"></div>')
 
-    //点击元素改变背景颜色
+    //Click elements change background-color to body
     change_list();
 
     var clicked = false;
@@ -25,8 +27,10 @@ $(function() {
             }, 600);
         });
     }
+    //Improved code highlight
     $("pre").addClass("prettyprint");
     prettyPrint(); 
+    //Functional of back top
     $('#backtop').click(function(event) {
         $('html,body').animate({scrollTop:0}, "slow");
     });
@@ -37,9 +41,10 @@ $(function() {
         $(this).animate({opacity:0.5}, "slow");   
     });
     backtop();
-    $('body').on('click', '.show-commend', function(){
+    //Click button show comment
+    $('body').on('click', '.show-comment', function(){
         var ds_loaded = false;
-        window.disqus_shortname = $('.show-commend').attr('name');
+        window.disqus_shortname = $('.show-comment').attr('name');
         $.ajax({
           type: "GET",
           url: "http://" + disqus_shortname + ".disqus.com/embed.js",
@@ -50,10 +55,7 @@ $(function() {
 });
 function change_list(){
     $('ul li:eq(0)').click(function(event) {
-        var str = "notes";
-        var patt1 = new RegExp(location.url);
         $('body').animate({backgroundColor:'#559B9D'}, "slow");
-        if(location.href)
         $('.list-active').removeClass('list-active');
         $('.list:eq(0)').addClass('list-active');        
     });

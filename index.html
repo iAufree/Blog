@@ -19,10 +19,12 @@ title: Monkey D Luffy
 <div class="list">
 	<div class="col-md-6 col-md-offset-3">
 	    <div class="panel panel-primary">
-	        <div class="panel-heading" name="{{ category[0] }}">{{ category[0] }}</div>
-	        	{% for post in category[1] %}
-	        <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
-	       	 	{% endfor %}
+	        <div class="panel-heading">
+	        	{{ category[0] }}
+	        </div>
+        	{% for post in category[1] %}
+		        <a href="{{ post.url }}" class="list-group-item pjaxlink">{{post.title}}</a>
+       	 	{% endfor %}
 	    </div>
 	</div>
 </div>
