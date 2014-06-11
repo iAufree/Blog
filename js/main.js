@@ -6,7 +6,22 @@ $(function() {
         $(this).addClass('active');       
     });
 
+    var $art_h1 = $('article').find('h1');
+
+    $art_h1.mouseover(function(){
+        if($art_h1.queue().length == 0) {
+            $art_h1.animate({width:'30%'},"slow");
+        }
+    }).mouseout(function(){
+        if($art_h1.queue().length == 2) {
+            $art_h1.stop(true);    
+        } else {
+            $art_h1.stop(true).animate({width:'100%'},"slow");
+        }
+    })
+
     //Pin navbar
+    $(".pinned").pin();
 
     //Add center propery to image
     art_img = $('article').find('img');

@@ -195,22 +195,25 @@ pre {
 article {
     border:5px solid white;
     margin-bottom: 30px;
-    background: rgba(255, 255, 255, 0.3);
+    background: url(../images/wrapper_bg.jpg);
     box-shadow: 5px 5px 15px rgb(53, 53, 53);
     border-radius: 5px;
     padding: 10px 10px;
 }
 article h1 {
+    width: 100%;
+    padding: 25px 0 10px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    box-shadow: 0 3px 15px rgb(65, 65, 65);
+    border-radius: 3px;
     text-align: center;
     font-family: luffy;
     font-size: 30px;
     color: #FFFFFF;
-    padding-bottom: 10px;
-    padding-top: 25px;
-    border-bottom: 5px solid white;
-    background-color: #1f2c39;
-    margin: -10px;
-    margin-bottom: 50px;
+    background-color: #4C7399;
 }
 article a {
     color: #106CBD;
@@ -271,4 +274,8 @@ article img {
 .MIT a{
     padding-right: 3px;
     color: white;
+}
+.MIT a:hover,.MIT a:focus {
+    color: #2a6496;
+    text-decoration: none;
 }
